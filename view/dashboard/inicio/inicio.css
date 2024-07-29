@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* --------------------------------------------- */
+
+.container{
+    display: flex;
+}
+
+/* --------------------------------------------- */
+
+.aside{
+    background-color: #171717;
+    height: 100vh;
+    padding: 20px;
+    width: 15%;
+}
+
+.aside__header{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 10px 10px;
+}
+
+.aside__header-img{
+    height: 30px;
+}
+
+.aside__nav{
+    margin-top: 20px;
+}
+
+.aside__item{
+    margin-bottom: 5px;
+}
+
+.aside__link{
+    color: #A3A3A3;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+}
+
+.aside__link:hover{
+    background-color: #2F2F2F;
+    border-radius: 7px;
+}
+
+.aside__link--principal{
+    color: #BE9DF5;    
+    background-color: #28252E;
+    border-radius: 7px;
+}
+
+.aside__link--principal:hover{
+    color: #BE9DF5;    
+    background-color: #28252E;
+    border-radius: 7px;
+}
+
+.aside__icon{
+    font-size: 13px;
+}
+
+.aside__text{
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+
+.aside__button{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: none;
+    color: #A3A3A3;
+}
+
+/* ------------------------------------------------------------ */
+.prime-container{
+    background-color: #FAFAFA;
+    width: 85%;
+
+    /* 
+    Esto me permite mantener el movimiento de scroll sin afectar
+    otros componentes de mi body
+    */
+    height: 100vh;
+    overflow: auto;
+}
+
+/* ------------------------------------------------------------ */
+
+.header{
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 10px 30px;
+    position: fixed;
+    z-index: 1;
+    width: 85%;
+}
+
+.header__title{
+    font-size: 10px;
+}
+
+.header__nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header__nav-item{
+    display: flex;
+    align-items: center;
+}
+
+.header__nav-button{
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    height: 40px;
+}
+
+.header__nav-button:hover{
+    background-color: #F5F5F5;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.header__nav-icon{
+    font-size: 20px;
+    color: #737373;
+}
+
+.header__nav-item--user{
+    color: #737373;
+    height: 40px;
+}
+
+.header__nav-item--user:hover{
+    background-color: #F5F5F5;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.header__nav-user-icon{
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.header__nav-user-info{
+    display: flex;
+    align-items: center;
+}
+
+.header__nav-username{
+    font-size: 12px;
+    color: #000000;
+}
+
+.header__nav-icon--downarrow{
+    margin: 10px;
+    font-size: 10px;
+    color: #737373;
+}
+
+/* ------------------------------------------------------------ */
+
+.main{
+    display: flex;
+    margin-top: 70px;
+}
+
+/* ------------------------------------------------------------ */
+
+.main__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 80px;
+}
+
+/* ------------------------------------------------------------ */
+
+
+.search {
+    margin: 20px 0 20px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+
+    /* Glassmorphism CSS Generator */
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.search__input {
+    width: 100%;
+    outline: none;
+    background: none;
+}
+
+.search__icon {
+    color: #737373;
+}
+
+/* ------------------------------------------------- */
+
+.post__article {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px 20px 10px 20px;
+    margin-bottom: 40px;
+
+    /* Glassmorphism CSS Generator */
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.post__header {
+    padding-bottom: 20px;
+}
+
+.post__header-section {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 12px;
+}
+
+.post__header-icon {
+    font-size: 40px;
+    color: #A3A3A3;
+}
+
+.post__header-info {
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.post__description {
+    font-size: 12px;
+}
+
+.post__image {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.post__image--img{
+    width: 100%;
+}
+
+.post__actions {
+    width: 100vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.post__action-button {
+    background: none;
+}
+
+.post__action-button:hover{
+    cursor: pointer;
+}
+
+.post__action-icon,
+.post__action-text {
+    color: #737373;
+    font-size: 15px;
+}
+
+
+/* ------------------------------------------------------------- */
+.extra-container{
+    margin-top: 20px;
+    width: 50%;
+    
+}
+
+.cronograma{
+    margin: 0 50px;
+    width: 300px;
+    border-radius: 20px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    /* Glassmorphism CSS Generator */
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.cronograma__title{
+    font-size: 25px;
+}
+
+.cronograma__nav{
+    margin: 20px 0 ;
+    width: 100%;
+}
+
+.cronograma__item{
+    margin: 10px 0;
+}
+
+.cronograma__link{
+    color: #BE9DF5;
+}
+

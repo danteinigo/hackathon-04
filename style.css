@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.img-main {
+    background: url('img/banner-idat.jpg') center no-repeat;
+    background-size: cover;
+    width: 67%;
+    display: flex;
+    align-items: center;
+
+    background-blend-mode: multiply;
+    /* Combina el color de fondo y la imagen de fondo */
+    background-color: rgba(0, 0, 0, 0.295);
+    /* Un gris semi-transparente */
+}
+
+.img-main img {
+    width: 84px;
+    margin-left: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.form-container {
+    background-color: #722AE9;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+    height: 60vh;
+    text-align: center;
+}
+
+.logo {
+    margin: 20px 0;
+}
+
+.logo img {
+    width: 250px;
+}
+
+h1{
+    font-size: 30px;
+}
+
+h2 {
+    margin: 20px 80px 30px;
+    font-size: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* -------------------------- */
+
+
+
+input[type="text"],
+input[type="password"] {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+input[type="password"] {
+    width: 300px;
+}
+
+button {
+    background-color: #171717;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 320px;
+}
+
+.forgot-password {
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    display: block;
+    text-decoration: underline;
+    font-weight: bold;
+}
